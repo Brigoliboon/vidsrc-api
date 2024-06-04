@@ -65,7 +65,7 @@ app.get('/:tmdbId', async(req, res) => {
 
     res.status(200).json({
         source: source,
-        referer: vidplayLink.split('?')[0],
+        referer: vidplayLink,
         subtitles: subtitles
     })
 })
